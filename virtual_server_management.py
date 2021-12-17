@@ -97,7 +97,7 @@ class CalculateNumber(object):
                     raise InsufficientServerSize('The server is smaller than the virtual server')
             
     def get_number_vr(self):
-        return str(len(self.server))
+        return len(self.server)
 
 class Tester(object):        
     def test_virtual_server(self):
@@ -121,5 +121,5 @@ class Tester(object):
         c1.add_virtual_machine("V2", 2,1,2)
         c1.add_virtual_machine("V3", 23,21,32)
         c1.calculate_number()
-        assert c1.get_number_vr() != 2
+        assert c1.get_number_vr() == 2
 
