@@ -124,5 +124,3 @@ class Tester(object):
         assert c1.get_number_vr() != 2
         return c1.get_number_vr()
 
-t1 = Tester()
-print("We need to buy " + t1.test_calculation() + " Servers")
