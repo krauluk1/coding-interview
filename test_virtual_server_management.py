@@ -3,7 +3,7 @@ Testing part of virtual_server_management.py
 """
 from virtual_server_management import VirtualServer, Server, CalculateNumber
 
-class Tester(object):        
+class TestVirtualServerManagement(object):        
     def test_virtual_server(self):
         vs1 = VirtualServer("Virtual Server 1", 22, 32, 32)
         assert vs1.get_name() == "Virtual Server 1"

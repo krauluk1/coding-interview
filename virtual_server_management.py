@@ -98,6 +98,3 @@ class CalculateNumber(object):
             
     def get_number_vr(self):
         return len(self.server)
-
-
-
